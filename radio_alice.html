@@ -76,15 +76,11 @@
                       <li><a href="index.html#RDFrepr">RDF representation</a></li>
                     </ul>
                   </li>
-				  				  
-                  <li><a href="index.html#portfolio">Conceptual map and E/R model []</a></li>
-                  <li><a href="index.html#clients">Metadata analysis and alignement</a></li>
-                  <li><a href="index.html#TM">Theoretical model</a></li>
-				  <li><a href="idex.html#CM">Conceptual model</a></li>
-                </ul>
+				                  </ul>
               </li>
-              <li><a class="nav-link scrollto" href="index.html#services">The Idea</a></li>
-              <li><a class="nav-link scrollto" href="index.html#about">The items</a></li>
+			  
+			                <li><a class="nav-link scrollto" href="index.html#Ref">References</a></li>
+              <li><a class="nav-link scrollto" href="#">                   </a></li>
 			  <li><a class="nav-link scrollto" href="index.html#team">Team</a></li>
               <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
             
@@ -104,10 +100,10 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Le ultime voci di Radio Alice (12 Marzo 1977)</h2>
+          <h2>Le ultime voci di Radio Alice (12 Marzo 1977)<br> A metadata alignement applied example</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li>Inner Page</li>
+            <li>Radio Alice record</li>
           </ol>
         </div>
 
@@ -116,8 +112,30 @@
 
     <section class="inner-page mt-4">
       <div class="container">
-	  <h1>ISBD</h1>
-	  <p>Le* ultime voci di Radio Alice (12 Marzo 1977) [Sound recording] / [Radio Alice; voci dei fratelli Minnella]. - [Italy] : Radioalice.org, [2016?]. — 1 file audio (5568 kb) (23 min, 43 sec). - Registrazione degli ultimi minuti di trasmissione di Radio Alice, prima che venisse chiusa "in diretta" dalla polizia. Le voci sono quelle dei fratelli Minnella poi arrestati per il "reato" di avere aperto i microfoni sulla città. — Mode of access: World Wide Web. — URL: https://www.radioalice.org/index.php?option=com_content&view=article&id=6&Itemid=108. — Description based on web page (viewed on Apr. 14, 2021)</p>
+	    
+	  <h1>Marc21</h1>
+        <p>
+        <table>
+<tr><td>LDR </td>	<td>00588nmm a2200145 u 4500</td></tr>
+<tr><td>001 </td>	<td>99245957207041</td></tr>
+<tr><td>005 </td>	<td>20210430222702.0</td></tr>
+<tr><td>008</td>	<td>210430r20161977ita#####o##h##000#0#ita#d</td></tr>
+<tr><td>110 2_</td>	<td><b>$a</b>Radio Alice</td></tr>
+<tr><td>245 13</td>	<td><b>$a</b>Le ultime voci di radio Alice <b>$c</b>[Radio Alice; voci dei fratelli Minnella] <b>$h</b>[sound recording] <b>$k</b>radio broadcast</td></tr>
+<tr><td>260 __</td>	<td><b>$a</b>Bologna <b>$b</b>Radioalice.org <b>$c</b>[2016?] <b>$g</b>1977</td></tr>
+<tr><td>300 __</td>	<td><b>$a</b>1 file mp3 (24 min.)</td></tr>
+<tr><td>306 __</td>	<td><b>$a</b>002443</td></tr>
+<tr><td>648 _4</td>	<td><b>$a</b>1977</td></tr>
+<tr><td>651 _4</td>	<td><b>$a</b>Bologna</td></tr>
+<tr><td>700 _3</td>	<td><b>$a</b>Minnella, Valerio</td></tr>
+<tr><td>856 4_</td>	<td><b>$a</b>Radioalice.org <b>$q</b>mp3 <b>$s</b>5568 kb <b>$u</b>https://www.radioalice.org/index.php?option=com_content&view=article&id=6&Itemid=108 <b>$2</b>World Wide Web</td></tr>
+</table>
+</p>
+
+<h1>ISBD</h1>
+	  
+	  <p>Le* <b>ultime voci di Radio Alice (12 Marzo 1977)</b> [Sound recording] / [Radio Alice; voci dei fratelli Minnella]. - [Italy] : Radioalice.org, [2016?]. — 1 file audio (5568 kb) (23 min, 43 sec). - Registrazione degli ultimi minuti di trasmissione di Radio Alice, prima che venisse chiusa "in diretta" dalla polizia. Le voci sono quelle dei fratelli Minnella poi arrestati per il "reato" di avere aperto i microfoni sulla città. — Mode of access: World Wide Web. — URL: https://www.radioalice.org/index.php?option=com_content&view=article&id=6&Itemid=108. — Description based on web page (viewed on Apr. 14, 2021)
+	  </p>		
 	  
 	  <h1>Mets-Mods</h1>
         <p>
@@ -139,6 +157,39 @@
 <br>Other authors/contributors: Minnella brothers  |  Radioalice.org  |  
 <br>Related records: 
         </p>
+		
+	<h1>Synoctic metadata table</h1>
+<p>
+<table>
+<tr><th>Elements</th>	<th>MARC21</th>	<th>ISBD</th>	<th>DC/DC Terms</th>	<th>DC</th>	<th>MODS</th></tr>
+<tr><td>type - system info</td>	<td>Leader /06 (Type of record)</td>	<td>0.1 Content Form; 7.0.1 Note on content form and media type</td>	<td>dcterms:MediaType</td>	<td>dc:type</td>	<td>mods:typeOfResource</td></tr>
+<tr><td>language - system info</td>	<td>008 - Fixed-Length Data Elements-General Information 15-17 - Place 35-37 - Language</td>	<td>7.1.2 Note on nature, scope, form, purpose or language</td>	<td>dcterms:LinguisticSystem</td>	<td>dc:language</td>	<td>mods:language</td></tr>
+<tr><td>individual creator</td>	<td>100 - Main Entry - Personal Name</td>	<td>1.4 Statement of responsibility</td>	<td>dcterms:Agent</td>	<td>dc:creator</td>	<td>mods:name - mods:role</td></tr>
+<tr><td>collective creator</td>	<td>110 - Corporate Name; 111 - Meeting Name</td>	<td>1.4 Statement of responsibility</td>	<td>dcterms:Agent</td>	<td>dc:creator</td>	<td>mods:name - mods:role</td></tr>
+<tr><td>title</td>	<td>245 $a - Title</td>	<td>1.1-3 Title (proper, parallael, complement)</td>	<td>NA</td>	<td>dcterms:title</td>	<td>mods:titleInfo - mods:title</td></tr>
+<tr><td>creator/contributor</td>	<td>245 $c - Statement of responsibility, etc.</td>	<td>1.4 Statement of responsibility</td>	<td>dcterms:Agent</td>	<td>dc:creator</td>	<td>mods:name - mods:role</td></tr>
+<tr><td>kind of resourse</td>	<td>245$h - Medium</td>	<td>0.1 Content Form; 7.0.1 Note on content form and media type</td>	<td></td>	<td></td>	<td></td></tr>
+<tr><td>genre</td>	<td>245 $k - Form</td>	<td>NA</td>	<td>NA</td>	<td>NA</td>	<td>mods:genre</td></tr>
+<tr><td>alternative title</td>	<td>246 - Varying Form of Title</td>	<td>NA</td>	<td>NA</td>	<td>dcterms:alternative</td>	<td>NA</td></tr>
+<tr><td>Place of publication</td>	<td>260 $a - Place of publication, distribution, etc.</td>	<td>4.1 Place of publication, production and/or distribution</td>	<td>dcterms:Location</td>	<td>dc:coverage.spatial</td>	<td>mods:originInfo - mods:place</td></tr>
+<tr><td>Name of Publisher</td>	<td>260 $b - Name of publisher, distributor, etc.</td>	<td>4.2 Name of Publisher, Producer and or Distributor</td>	<td>dcterms:AgentClass</td>	<td>dc:publisher</td>	<td>NA</td></tr>
+<tr><td>Date of publication</td>	<td>260 $c - Date of publication, distribution, etc.</td>	<td>4.3 Date of publication, production and/or distribution</td>	<td>dcterms:PeriodOfTime</td>	<td>dc:date; dc:coverage.temporal</td>	<td>mods:dateIssued</td></tr>
+<tr><td>place of realization/material reproduction</td>	<td>260 $e - Place of manufacture</td>	<td>4.4 Place of printing or manufacture</td>	<td>dcterms:Location</td>	<td>dc:coverage.spatial</td>	<td>NA</td></tr>
+<tr><td>printer</td>	<td>260 $f - Manufacturer</td>	<td>4.5 Name of printer or manufacturer</td>	<td>dcterms:AgentClass</td>	<td>NA</td>	<td>NA</td></tr>
+<tr><td>Date of manifacture</td>	<td>260 $g - Date of manufacture</td>	<td>4.6 Date of printing or manufacture</td>	<td>dcterms:PeriodOfTime</td>	<td>dcterms:created</td>	<td>mods:originInfo - mods:dateCaptured</td></tr>
+<tr><td>Physical description - extent</td>	<td>300 $a - Extent</td>	<td>5.1 Extent</td>	<td>dcterms:SizeOrDuration</td>	<td>NA</td>	<td>mods:physicalDescription - mods:extent</td></tr>
+<tr><td>Physical description - duration</td>	<td>306 $a - Playing time</td>	<td>5.1.5 Playing time</td>	<td>dcterms:SizeOrDuration</td>	<td>NA</td>	<td>mods:physicalDescription - mods:extent</td></tr>
+<tr><td>subject</td>	<td>648 $a - Chronological term</td>	<td>NA</td>	<td></td>	<td></td>	<td></td></tr>
+<tr><td>subject</td>	<td>651 $a - Geographic name</td>	<td>NA</td>	<td>NA</td>	<td>dc:subject</td>	<td>mods:subject</td></tr>
+<tr><td>Added entry</td>	<td>700-720 - Added Entry</td>	<td>1.4 Statement of responsibility; 7.1.4 Note on statements of responsibility</td>	<td>NA</td>	<td>dc: contributor</td>	<td>mods:name - mods:role</td></tr>
+<tr><td>location ad access</td>	<td>856 $a - Host name</td>	<td>7.0.5 Note on mode of access</td>	<td></td>	<td></td>	<td></td></tr>
+<tr><td>location ad access</td>	<td>856 $q - Electronic format type</td>	<td>7.0.5 Note on mode of access</td>	<td></td>	<td></td>	<td></td></tr>
+<tr><td>location ad access</td>	<td>856 $s - File size</td>	<td>7.0.5 Note on mode of access</td>	<td></td>	<td></td>	<td></td></tr>
+<tr><td>location ad access</td>	<td>856 $u - Uniform Resource Identifier</td>	<td>7.0.5 Note on mode of access</td>	<td></td>	<td></td>	<td></td></tr>
+<tr><td>location ad access</td>	<td>856 $2 - Access method</td>	<td>7.0.5 Note on mode of access</td>	<td></td>	<td></td>	<td></td></tr>
+</table>
+	
+</p>		
       </div>
     </section>
 
