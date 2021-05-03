@@ -220,8 +220,8 @@
           <h3>The items</h3>
           <p>Despite the fact that we found a lot of interesting items related each other and illustrating the crucial political and cultural events running in Bologna in 1977, we finally have choosen the 10 ones that could show the wider variety of typology in the LAM domain as well as different kind of metadata standards used for their description.</p>
         </header>
-		<p>For every item, apart from the <b>title and some information</b>, we outline the <b>typology</b>, the <b>cultural institution</b> that described it, the <b>standards</b> used (declared from the institution, self evident or infered/applied by us), and the <b>FRBR level</b> of the description. We realized indeed that different FRBR levels were present in our items descriptions and that it was important to clarify which level would have been involved in order to model correctly the ER and following models.
-		<br>In one case, because of the sound relevance of the item for the subjetc analysed - the audio recording of the last <b>RadioAlice radio broadcast</b> - we decided to try to insert anyway the item despite it was not already described: we create the a .... from scratch a description based on METS-MODS LC standards.
+		<p>For every item, apart from the <b>title and some information</b>, we outline the <b>typology</b>, the <b>cultural institution</b> that described it, the <b>standards</b> used (declared from the institution, self evident or infered/applied by us), and the <b>FRBR level</b> of the description. We realized indeed that different FRBR levels were present in our items descriptions and that it was important to clarify which level would have been involved in order to correctly model the following steps.
+		<br>In one case, the audio recording of the last <b>Radio Alice broadcast</b>, because of the strong relevance of the item for the subjetc, we decided to insert it anyway even if it was not already described by cultural istitutions: we then have used it for a "metadata alignement applied example" by creating from scratch some records based on MARC21, ISBD and DC standards. 
 		<br>Also the <b>Imponderabilia</b> record has required several screening, research and e-mail, and finally we found an interesting description of the performance itself instead of its recording or photo-reportage by MIT.
 		</p>
 		  
@@ -235,7 +235,7 @@
               </div>
               <h2 class="title">Paz!<br>Movie</h2>
               <p>Full record from <a href="http://fondazione.cinetecadibologna.it/archivi/memoriaer/film_767" target="_blank">Fondazione Cineteca di Bologna</a>.
-              <br>Metadata stadards: METS applied.
+              <br>Metadata stadards: Schema.org applied.
 			  <br>FRBR level: expression
               <br>---
 			  <br>An overall depiction of the period, focused on the comic's author <b>Andrea Pazienza</b>.
@@ -299,7 +299,7 @@
               </div>
               <h2 class="title">Le ultime voci di Radio Alice.<br>Audio recording</h2>
               <p>Full records <a href="radio_alice.html">autodone</a>.
-			  <br>Metadata stadards: MARC21, ISBD, METS applied.
+			  <br>Metadata stadards: MARC21, ISBD, DC applied.
 			  <br>FRBR level: audio recording manifestation
 			  <br>---
 			  <br>On <b>12th of March</b> Radio Alice headquartes was moved away from the police.
@@ -479,7 +479,7 @@
         </header>
 
         <div class="clients-slider swiper-container">
-		<p>In most of cases, the metadata used to describe cultural items by cultural institution were quite "classical" as ISBD and MARC21 for bibliographic records, ISAD(G), ISAAR(CFP) for archival contents, DC for the performance "Imponderabilia" described by MIT, MMD by MusicBrainz. Neverteless, as mentioned, in some cases the standards were not declared or self evident so we decide to consider the most suitable choise as the CIDOC-CR for the sculpture "Tre Colonne" and the MODS for the Radio Alice audio recording and the Paz! movie.
+		<p>In most of cases, the metadata used to describe the items by cultural institutions were quite "classical" as ISBD and MARC21 for bibliographic records, ISAD(G), ISAAR(CFP) for archival contents, DC for the performance "Imponderabilia" described by MIT, MMD by MusicBrainz. Neverteless, as mentioned, in some cases the standards were not declared or self evident so we decide to consider the most suitable choise as the CIDOC-CR for the sculpture "Tre Colonne", the DC for the digital book and the Schema.org for the movie Paz!.
 		
 		<table class="table table-condensed">	
 			 
@@ -498,7 +498,7 @@
 <td>movie</td>
 <td><a href="http://archivi.ibc.regione.emilia-romagna.it/ead-comparc/IT-ER-IBC-037006-004-160"  target="_blank">Fondazione Cineteca di Bologna</a></td>
 <td>expression</td>
-<td>MODS</td>
+<td>Schema.org</td>
 </tr>
 
 <tr>
@@ -525,7 +525,7 @@
 <td>Audio recording</td>
 <td><a href="https://www.radioalice.org/index.php?option=com_content&view=article&id=6&Itemid=108"  target="_blank">Radioalice.org</a></td>
 <td>manifestation</td>
-<td>MODS</td>
+<td>MARC21, ISBD, DC</td>
 </tr>
 
 <tr>
@@ -644,7 +644,8 @@
         </header>
 
         <div class="clients-slider swiper-container">
-		<p>FRBR issues, centrality of collective agents, conceptual definition timespan-VS single event?? qui?? <br>We started analysing the metadata related to every item, and we construct a first, really complex representation of the interconnection between items and entities. We then go further to abstract every possible relation to people, places, time and concent by simplifying the nodes and enriching the edges towards them.</p>
+		<p>We started analysing the metadata related to every item, and we construct a representation of the interconnection between items and entities that enriched the ER model.
+		<br>[We then go further to abstract every possible relation to people, places, time and concent by simplifying the nodes and enriching the edges towards them.]</p>
         <p>
 			
               <img src="assets/img/portfolio/TM1.jpg" class="center" alt="">
@@ -700,14 +701,14 @@
 
         <div class="clients-slider swiper-container">
 		<p>We started from the metadata alignement and, when the items were described with standards that had become also an ontology (i.e. <b>Imponderabilia</b> in DC and DRACOR), we decided to save this choice, except if a deeper description of the possible relationship were offered from a specific ontology (esempi) ci sono? c'è un comics ontology, boh.
-		<br>When the items were indeed described by "classical" metadata, without a link with an existing ontology, we decided to apply the most suitable ontology we found: i.e. <b>Inascoltable</b> music album, described in MMD, were translated with predicates of MusicOnlogy (mettere link??), the archival items with OAD EAC-CPF, bibliographic records with FABIO.
-		<br>The items described without explicit reference to metadata standards or not described at all, have been classified in the alignement directly with their most suitable ontology as [mods, vedi se è ontology] and CIDOC-CR FRBRoo for the <b>Tre Colonne</b>.
-		<br>In this last case, we went in depth analysing a realizing a <a href="metteremodelloIlaria" target="_blank">visualization (mettere modello ilaria)</a> visualization of possible application of CICOC-CR and FRBRoo classes and properties to one item.
-		<br>In general, but in particular for these last two, in case an "open in revision" edition declared, we opted anyway for the established closed editions because of the impossibility to follow changements in the ontology after the release of our project FRBRoo (closed 2017 ed.) and CIDOC-CR (closed 2020 Oct. ed.).
+		<br>When the items were indeed described by "classical" metadata, without a link with an existing ontology, we decided to apply the most suitable ontology we found: i.e. <b>Inascoltable</b> music album, described in MMD, were translated with predicates of MusicOnlogy (mettere link??), the archival items with OAD EAC-CPF, bibliographic records with BibFrame.
+		<br>The items described without explicit reference to metadata standards or not described at all, have been classified in the metadata analysis and alignement directly with their most suitable ontology as Schema.org for the movie <b>Paz!</b> and CIDOC-CR FRBRoo for the <b>Tre Colonne</b>.
+		<br>In some cases, we went in depth analysing and realizing a <a href="assets/img/portfolio/CModelClass.jpg" target="_blank">visualization</a> of possible applications of CICOC-CR and FRBRoo classes and properties to the items.
+		<br>In general, but in particular for these last two ontologies, in case an "open in revision" edition declared, we opted anyway for the established closed editions. Because of the impossibility to follow changements in the ontology after the release of our project, we used then FRBRoo (closed 2017 ed.) and CIDOC-CR (closed 2020 Oct. ed.).
 		<br>
 		<br>Moreover, due to the centrality for our subject of interconnected events during a timespan, as well as of collective agents, we decided to explore in depth some ontologies with these focus. 
-		<br>For the <b>events</b>, we analysed <a href="https://linkedevents.org/ontology/" target="_blank">LODE: An ontology for Linking Open Descriptions of Events</a> and <a href="http://motools.sourceforge.net/event/event.html" target="_blank">The Event Ontology</a> but even if the first was more directly related with the oad onltogy we studied for archival documents, we decided for the second one beacuse of its  property subevent, really suitable for illustration the structure of our theme, composed of an overall event called "Bologna 1977" and several interconnected  subevents happened in that year. We could in this way illustrate single "episodes" as Lorusso murder on March, 11, Radio Alice closing on 12, International congress on September 22-24, etc. that were strictly related to our items.<br>
-		Finally we concentrated on ontologies exploring relations between people, groups, organization and individual or collective agents and its members as FOAF and ORG.
+		<br>For the <b>events</b>, we analysed <a href="https://linkedevents.org/ontology/" target="_blank">LODE: An ontology for Linking Open Descriptions of Events</a> and <a href="http://motools.sourceforge.net/event/event.html" target="_blank">The Event Ontology</a> and used both of them because even if Lode was more directly related with the oad ontology we studied for archival documents, the second one has a really suitable subevent property for illustrating the structure of our theme. The overall event called "Bologna 1977" is indeed composed and interconnected with several subevents happened in that year. We could in this way illustrate single "episodes" as Lorusso murder on March, 11, Radio Alice closing on 12, International congress on September 22-24, etc. that were strictly related to our items.<br>
+		Finally we concentrated also on ontologies exploring <b>relations between people, groups, organization and individual or collective agents</b> and its members as <a href="http://xmlns.com/foaf/0.1/" target="_blank">FOAF</a> and <a href="http://www.w3.org/TR/vocab-org/" target="_blank">The Organization Ontology</a>.
 		<br>Detailed tables with predicates for every items are available in a <a href="table_conceptual.html" target="_blank">specific page??.
 		</p>
            		
@@ -736,7 +737,7 @@
             </figure>
 
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html">Dettaglio conceptual di Ilaria Colonne</a></h4>
+              <h4><a href="portfolio-details.html">Dettaglio conceptual giallo</a></h4>
               <p>.</p>
             </div>
           </div>
