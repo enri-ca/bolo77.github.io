@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>BoLo(D) '77. Predicated table</title>
+  <title>BoLo(D) '77. Data representation</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -103,7 +103,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Tavole predicati<br> ....</h2>
+          <h2>Data representation<br> ....</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
             <li>Conceptual model predicate tables</li>
@@ -116,6 +116,28 @@
     <section class="inner-page mt-4">
       <div class="container">
 	    
+	  <h1>Paz! Movie</h1>
+        <p>
+		<table class="table table-condensed">
+		<tr><th></th>	<th>Question</th>	<th>predicate</th>	<th>Object</th></tr>
+<tr><td>Who</td>	<td>Who acted in it?</td>	<td>schema:actor</td>	<td>Cast members</td></tr>
+<tr><td>Who</td>	<td>Who are the contributors?</td>	<td>schema:contributor</td>	<td>Production Crew</td></tr>
+<tr><td>Who</td>	<td>Who distributed it?</td>	<td>schema:publisher</td>	<td>Mikado film</td></tr>
+<tr><td>Who</td>	<td>Who are the producers?</td>	<td>schema:productionCompany</td>	<td>Tangram Film, RAI Cinema, Stream, I.T.C. Movie</td></tr>
+<tr><td>Who</td>	<td>Who directed it?</td>	<td>schema:director</td>	<td>Renato De Maria</td></tr>
+<tr><td>Who</td>	<td>Who inspired it?</td>	<td>schema:isBasedon</td>	<td>"Le straordinarie avventure di Penthotal" (A.P. comic)</td></tr>
+<tr><td>Who</td>	<td>Who did a cameo in it?</td>	<td>schema:performerIn</td>	<td>Freak Antoni, Frankie hi NRG, Giovanni Lindo Ferretti</td></tr>
+<tr><td>Who</td>	<td>Who did the soundtrack?</td>	<td>schema:musicBy</td>	<td>Skiantos, CCCP</td></tr>
+<tr><td>When</td>	<td>When was it created?</td>	<td>schema:dateCreated</td>	<td>2002</td></tr>
+<tr><td>Where</td>	<td>Where was it produced?</td>	<td>schema:countryOfOrigin</td>	<td>Italy</td></tr>
+<tr><td>Where</td>	<td>Where was it filmed?</td>	<td>schema:locationCreated</td>	<td>Bologna</td></tr>
+<tr><td>What</td>	<td>What is the language?</td>	<td>schema:inLanguage</td>	<td>Italian</td></tr>
+<tr><td>What</td>	<td>What is its subject?</td>	<td>schema:about</td>	<td>Andrea Pazienza </td></tr>
+</table>
+</p>
+		
+		
+		
 	  <h1>Archivio dell'Associazione Pier Francesco Lorusso. Archival Fond</h1>
         <p>
 		<h2>main table</h2>
@@ -238,6 +260,31 @@
 <tr><td>What</td>	<td>what is the item about/its subjects?</td>	<td>crm:P129_is_about [non crm:P67_refers_to]</td>	<td>Incontro Internazionale 22-24 Settembre</td></tr>
 </table>
 </p>
+
+<h1>Piazza Maggiore era troppo piccola. Book</h1>
+        <p>
+<table class="table table-condensed">
+
+<tr><th></th>	<th>Question</th>	<th>predicate</th>	<th>Object</th></tr>
+<tr><td>Who</td>	<td>Who is the creator?</td>	<td>bf:Agent</td>	<td>Autori vari</td></tr>
+<tr><td>Who</td>	<td>Who realized the expression?</td>	<td>rdae:P20448 has_creator_collective_agent_of_expression</td>	<td>Edizioni Movimento Studentesco</td></tr>
+<tr><td>Who</td>	<td>Who is the item holder?</td>	<td>bf:heldBy</td>	<td>Archivio Grafton</td></tr>
+<tr><td>Who</td>	<td>Who is the electronic version distributor?</td>	<td>bf:distribution</td>	<td>Internet Archive</td></tr>
+<tr><td>When</td>	<td>When was the work created?</td>	<td>bf:Date</td>	<td>Oct-77</td></tr>
+<tr><td>Where</td>	<td>Where the electronic format is located?</td>	<td>bf:electronicLocator</td>	<td>Internet Archive</td></tr>
+<tr><td>What</td>	<td>What is the title of the work?</td>	<td>bf:Title</td>	<td>"Piazza Maggiore era troppo piccola"</td></tr>
+<tr><td>What</td>	<td>What is the file size?</td>	<td>bf:digitalCharacteristic</td>	<td>23,6 MB</td></tr>
+<tr><td>What</td>	<td>What kind of format the instance has?</td>	<td>bf:digitalCharacteristic</td>	<td>EPUB</td></tr>
+<tr><td>What</td>	<td>What is the language of the expression?</td>	<td>rdae:P20006 has_language_of_expression</td>	<td>Italian</td></tr>
+<tr><td>What</td>	<td>What type of content does the expression have?</td>	<td>rdae:P20001 has_content_type</td>	<td>Text/Images</td></tr>
+<tr><td>What</td>	<td>What is the encoding format?</td>	<td>bf:digitalCharacteristic</td>	<td>UTF-8</td></tr>
+<tr><td>What</td>	<td>What is the language of the work?</td>	<td>bf:language</td>	<td>Italian</td></tr>
+<tr><td>What</td>	<td>What is the item mark?</td>	<td>bf:shelfMark</td>	<td>ark:/13960/t5r80w22c</td></tr>
+<tr><td>What</td>	<td>What is the topic illustrated by the work?</td>	<td>lode:Illustrate</td>	<td>Convegno di Bologna del 23/24/25 Settembre</td></tr>
+</table>
+</p>
+
+
 
 <h1>Tre Colonne. Sculpture</h1>
         <p>
