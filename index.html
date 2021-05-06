@@ -2,6 +2,34 @@
 <html lang="en">
 
 <head>
+  <style type="text/css">
+  .parallax {
+  /* The image used */
+  background-image: url("/Users/Admin/Documents/GitHub/bolo77.github.io/assets/img/background.jpeg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+  .margin{
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .nav-item{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:20px;
+    background-color: #badb84;
+    font-weight: bold;
+  }
+  </style>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -19,6 +47,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">	
   <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">  
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+
+
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -26,6 +58,7 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -52,7 +85,7 @@
 
           <nav id="navbar" class="navbar">
             <ul>
-              <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+              <!--<li><a class="nav-link scrollto active" href="#hero">Home</a></li>-->
                   <li class="dropdown"><a href="#"><span>Study of the domain</span> <i class="bi bi-chevron-right"></i></a>
                     <ul>
                       <li><a href="#services">Idea</a></li>
@@ -77,7 +110,7 @@
                       <li><a href="#RDFrepr">RDF representation</a></li>
                     </ul>
                   </li>	  				  
-             <li><a class="nav-link scrollto" href="#team">Team and contacts</a></li>
+             <li><a class="nav-link scrollto" href="#team">Team </a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
@@ -711,6 +744,86 @@
 
       </div>
     </section><!-- End Conceptual model Section -->
+ <!-- ======= Parallax ======= -->
+    <div class="parallax">
+    </div>
+    <!-- End Parallax Section -->
+<!-- ======= Detailed section =======-->
+<section>
+  <div class="margin">
+  <header class="section-header">
+          <h3>TITOLO</h3>
+          <p> due righe due righe due righe </p>
+        </header>
+
+<nav class="navbar border border-4" style="color:#badb84">
+<div class="col col-sm-12">
+<ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="bolo-tab" data-bs-toggle="tab" data-bs-target="#bolo" type="button" role="tab" aria-controls="bolo" aria-selected="false">Bolo '77</button>
+  </li>
+  <li class="nav-item" role="presentation">
+  <button class="nav-link" id="archive-tab" data-bs-toggle="tab" data-bs-target="#archive" type="button" role="tab" aria-controls="archive" aria-selected="true">Archive</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="book-tab" data-bs-toggle="tab" data-bs-target="#book" type="button" role="tab" aria-controls="book" aria-selected="false">Book</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="performance-tab" data-bs-toggle="tab" data-bs-target="#performance" type="button" role="tab" aria-controls="performance" aria-selected="false">Performance</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="colonne-tab" data-bs-toggle="tab" data-bs-target="#colonne" type="button" role="tab" aria-controls="colonne" aria-selected="false">Sculpture</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="poster-tab" data-bs-toggle="tab" data-bs-target="#poster" type="button" role="tab" aria-controls="poster" aria-selected="false">Poster</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="album-tab" data-bs-toggle="tab" data-bs-target="#album" type="button" role="tab" aria-controls="album" aria-selected="false">Musical Album</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="film-tab" data-bs-toggle="tab" data-bs-target="#film" type="button" role="tab" aria-controls="film" aria-selected="false">Film</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="magazine-tab" data-bs-toggle="tab" data-bs-target="#magazine" type="button" role="tab" aria-controls="magazine" aria-selected="false">Magazine</button>
+  </li>
+</div>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade" id="archive" role="tabpanel" aria-labelledby="archive-tab">
+    <img src="/Users/Admin/Documents/GitHub/bolo77.github.io/assets/img/archivi.svg" width="900px" style="margin:15px">
+  </div>
+  <div class="tab-pane fade" id="book" role="tabpanel" aria-labelledby="book-tab">
+    <img src="/Users/Admin/Documents/GitHub/bolo77.github.io/assets/img/book (1).svg" width="900px" style="margin: 15px">
+  </div>
+  <div class="tab-pane fade" id="performance" role="tabpanel" aria-labelledby="performance-tab">
+    <img src="/Users/Admin/Documents/GitHub/bolo77.github.io/assets/img/performance conceptual.svg" width="900px"  style="margin: 15px">
+  </div>
+  <div class="tab-pane fade" id="colonne" role="tabpanel" aria-labelledby="colonne-tab">
+    <img src="/Users/Admin/Documents/GitHub/bolo77.github.io/assets/img/colonne.svg" width="900px" style="margin:15px" >
+  </div>
+  <div class="tab-pane fade" id="poster" role="poster" aria-labelledby="poster-tab">
+    <img src="/Users/Admin/Documents/GitHub/bolo77.github.io/assets/img/poster.svg" width="900px" style="margin:15px">
+  </div>
+  <div class="tab-pane fade" id="album" role="tabpanel" aria-labelledby="album-tab">
+    <img src="/Users/Admin/Documents/GitHub/bolo77.github.io/assets/img/musicalalbum.svg" width="900px" style="margin:15px">
+  </div>
+  <div class="tab-pane fade" id="colonne" role="tabpanel" aria-labelledby="colonne-tab">
+    <img src="/Users/Admin/Documents/GitHub/bolo77.github.io/assets/img/colonne.svg"  width="900px"  style="margin:15px auto">
+  </div>
+  <div class="tab-pane fade show active" id="bolo" role="tabpanel" aria-labelledby="bolo-tab">
+    <img src="/Users/Admin/Documents/GitHub/bolo77.github.io/assets/img/centro.svg"  width="900px" style="margin:15px auto">
+  </div>
+</div>
+</nav>
+</div>
+</div>
+</section>
+
+<!-- ======= End of detailed section ======= -->
+<!-- ======= Parallax ======= -->
+    <div class="parallax">
+    </div>
+    <!-- End Parallax Section -->
 
 <!-- ======= Data representation section ======= -->
     <section id="datarepr">
@@ -923,6 +1036,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
 </body>
 
