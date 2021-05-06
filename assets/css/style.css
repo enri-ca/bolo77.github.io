@@ -31,9 +31,16 @@ p {
   margin: 0 0 30px 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+h1, h2, h3, h4{
+  font-family: 'Coda Caption', sans-serif;
   font-weight: 400;
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+h5, h6{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;font-size: 20px;
   margin: 0 0 20px 0;
   padding: 0;
 }
@@ -135,14 +142,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo {
-  font-size: 40px;
+  font-size: 35px;
   margin: 0;
   padding: 0;
   font-family:'Coda Caption', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 3px;
-  padding-left: 10px;
-  border-left: 4px solid #90b05b;
+  padding-left: 8px;
+  border-left: 3px solid #90b05b;
 }
 
 #header .logo a {
