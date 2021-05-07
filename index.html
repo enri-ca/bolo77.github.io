@@ -3,9 +3,41 @@
 
 <head>
   <style type="text/css">
+  
+
+ /*PARALLAXES*/
   .parallax {
   /* The image used */
   background-image: url("assets/img/background.jpeg");
+
+  /* Set a specific height */
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ .parallax1{
+   /* The image used */
+  background-image: url("assets/img/background1.jpeg");
+  filter: grayscale(100%);
+
+  /* Set a specific height */
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2{
+   /* The image used */
+  background-image: url("assets/img/background2.jpeg");
+  filter: grayscale(100%);
 
   /* Set a specific height */
   min-height: 300px; 
@@ -20,7 +52,7 @@
   .margin{
     margin-right: 10%;
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 10%;
   }
   .nav-item{
@@ -42,8 +74,8 @@
   border-radius: 50%;
   cursor: none;
   /*Set the size of the magnifier glass:*/
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
 }
 
   </style>
@@ -611,6 +643,10 @@
 
       </div>
     </section><!-- End Portfolio Section -->
+    <!-- Parallax 1 -->
+ <div class="parallax1">
+    </div>
+<!-- End parallax -->
 
     <!-- ======= Our Clients Section ======= -->
     <section id="clients">
@@ -644,6 +680,7 @@
       </div>
     </section><!-- End Our Clients Section -->
 
+
 <!-- ======= Metadata alignement Section ======= -->
     <section id="MDA">
       <div class="container" data-aos="zoom-in">
@@ -654,7 +691,7 @@
 		<h1 align="center"><a href="#what">What</a> - <a href="#when">When</a> - <a href="#where">Where</a> - <a href="#who">Who</a></h1>
 
         <div class="clients-slider swiper-container">
-<h1><a name="who">Who</a></h1>
+<h1 style="color: black; margin-top: 10%"><a name="who">WHO</a></h1>
 <p>
 <table class="table table-condensed" width="50%">
 <tr><th>Element</th>	<th>ISBD</th>	<th>MARC21</th>	<th>DC/DCTerms</th>	<th>CIDOC-CRM</th>	<th>FRBRoo</th>	<th>MMD</th>	<th>ISAD(G)</th>	<th>Schema.org</th></tr>
@@ -671,7 +708,7 @@
 </table>
 </p>
 
-<h1><a name="where">Where</a></h1>
+<h1 style="color: black; margin-top: 10%"><a name="where">WHERE</a></h1>
 <p>
 <table class="table table-condensed" width="50%">
 <tr><th>Element</th>	<th>ISBD</th>	<th>MARC21</th>	<th>DC/DCTerms</th>	<th>CIDOC-CRM</th>	<th>FRBRoo</th>	<th>MMD</th>	<th>ISAD(G)</th>	<th>Schema.org</th></tr>
@@ -686,7 +723,7 @@
 </table>
 </p>
 
-<h1><a name="when">When</a></h1>
+<h1 style="color: black; margin-top: 10%"><a name="when">WHEN</a></h1>
 <p>
 <table class="table table-condensed" width="50%">
 <tr><th>Element</th>	<th>ISBD</th>	<th>MARC21</th>	<th>DC/DCTerms</th>	<th>CIDOC-CRM</th>	<th>FRBRoo</th>	<th>MMD</th>	<th>ISAD(G)</th>	<th>Schema.org</th></tr>
@@ -698,7 +735,7 @@
 </table>
 </p>
 
-<h1><a name="what">What</a></h1>
+<h1 style="color: black; margin-top: 10%"><a name="what">WHAT</a></h1>
 <p>
 <table class="table table-condensed" width="50%">
 <tr><th>Element</th>	<th>ISBD</th>	<th>MARC21</th>	<th>DC/DCTerms</th>	<th>CIDOC-CRM</th>	<th>FRBRoo</th>	<th>MMD</th>	<th>ISAD(G)</th>	<th>Schema.org</th></tr>
@@ -729,13 +766,15 @@
     </section>
 
 <!-- End Metadata alignement Section -->
+<div class="parallax2">
+    </div>
 
 <!-- ======= Theoretical model Section ======= -->
     <section id="TM">
       <div class="container" data-aos="zoom-in">
 
         <header class="section-header">
-          <h3>Theoretical model</h3>
+          <h3 style="margin-top: 6%">Theoretical model</h3>
         </header>
 
         <div class="clients-slider swiper-container">
@@ -743,7 +782,7 @@
 		<br>[We then go further to abstract every possible relation to people, places, time and concent by simplifying the nodes and enriching the edges towards them.]</p>
         <p>
 					
-		<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+	<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
             <figure>
@@ -913,7 +952,7 @@
       <div class="container" data-aos="zoom-in">
 
         <header class="section-header">
-          <h3>Data representation</h3>
+          <h3 style="margin-top: 6%">Data representation</h3>
         <p>A <a href="table_conceptual.html" target="_blank">specific page</a> has been dedicated to the predicate-tables for every item.
 </p>	
 		</header>
