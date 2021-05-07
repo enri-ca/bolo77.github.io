@@ -29,7 +29,86 @@
     background-color: #badb84;
     font-weight: bold;
   }
+
+* {box-sizing: border-box;}
+
+.img-magnifier-container {
+  position: relative;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 100px;
+  height: 100px;
+}
+
   </style>
+  <script type="text/javascript">
+    function magnify(imgID, zoom) {
+  var img, glass, w, h, bw;
+  img = document.getElementById(imgID);
+
+  /* Create magnifier glass: */
+  glass = document.createElement("DIV");
+  glass.setAttribute("class", "img-magnifier-glass");
+
+  /* Insert magnifier glass: */
+  img.parentElement.insertBefore(glass, img);
+
+  /* Set background properties for the magnifier glass: */
+  glass.style.backgroundImage = "url('" + img.src + "')";
+  glass.style.backgroundRepeat = "no-repeat";
+  glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+  bw = 3;
+  w = glass.offsetWidth / 2;
+  h = glass.offsetHeight / 2;
+
+  /* Execute a function when someone moves the magnifier glass over the image: */
+  glass.addEventListener("mousemove", moveMagnifier);
+  img.addEventListener("mousemove", moveMagnifier);
+
+  /*and also for touch screens:*/
+  glass.addEventListener("touchmove", moveMagnifier);
+  img.addEventListener("touchmove", moveMagnifier);
+  function moveMagnifier(e) {
+    var pos, x, y;
+    /* Prevent any other actions that may occur when moving over the image */
+    e.preventDefault();
+    /* Get the cursor's x and y positions: */
+    pos = getCursorPos(e);
+    x = pos.x;
+    y = pos.y;
+    /* Prevent the magnifier glass from being positioned outside the image: */
+    if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+    if (x < w / zoom) {x = w / zoom;}
+    if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+    if (y < h / zoom) {y = h / zoom;}
+    /* Set the position of the magnifier glass: */
+    glass.style.left = (x - w) + "px";
+    glass.style.top = (y - h) + "px";
+    /* Display what the magnifier glass "sees": */
+    glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+  }
+
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /* Get the x and y positions of the image: */
+    a = img.getBoundingClientRect();
+    /* Calculate the cursor's x and y coordinates, relative to the image: */
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /* Consider any page scrolling: */
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+  </script>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -221,12 +300,16 @@
 
     <!-- ======= Services Section ======= -->
     <section id="services">
-      <div class="container" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" style="text-align: justify;">
 
         <header class="section-header wow fadeInUp">
           <h3>Idea</h3>
           <p></p>        </header>
-		  <p><img src="assets/img/FirstIdea.jpg" alt="First draft Bolo 77 LOD" height="350" style="float:right">In the frame of the complex, libertarian and creative <b>"1977 movement", Bologna</b> represented a key place where political events, as well as cultural and creative happenings took place and deeply signed the city and the national contemporary history.
+		  <p>
+        <div class="img-magnifier-container">
+        <img src="assets/img/FirstIdea.svg" alt="First draft Bolo 77 LOD" id="myimage" height="400" style="float:left">
+        </div>
+        In the frame of the complex, libertarian and creative <b>"1977 movement", Bologna</b> represented a key place where political events, as well as cultural and creative happenings took place and deeply signed the city and the national contemporary history.
 		  <br>On 11th of march, during a violent riot moved from a contestation between different sides of student associations, the overreaction of the police led to the death of the young <b>Francesco Lorusso</b> medicine student, shooted in the street.
 		  <br>This event shocked people, sympathizers and activists that started converging spontaneously in Piazza Verdi and decided for a protest march. Francesco Cossiga, Minister of the Interior, sent then armored vehicles to the center of Bologna, accentuating the political conflict. <b>Radio Alice, an emblematic free radio</b>, was forcely closed the next day.
 		  <br>These events provoqued several reactions, from the manifestation organized few days after from the confederal unions to ban the student's protest, to the so-called "Manifesto agaist repression" signed by Jean Paul Sartre together with other French intellectuals, including Simone de Beauvoir, Michel Foucault, Gilles Deleuze and Felix Guattari in support of people arrested during the riots.
@@ -1037,6 +1120,14 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  <!-- lente -->
+<script>
+/* Initiate Magnify Function
+with the id of the image, and the strength of the magnifier glass:*/
+magnify("myimage", 3);
+</script>
+
 
 </body>
 
