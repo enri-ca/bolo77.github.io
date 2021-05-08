@@ -3,6 +3,11 @@
 
 <head>
   <style type="text/css">
+
+  div.scrolltab {
+  overflow: auto;
+  white-space: nowrap;
+}
   
 
  /*PARALLAXES*/
@@ -47,6 +52,22 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.parallax3{
+   /* The image used */
+  background-image: url("assets/img/background3.png");
+  filter: grayscale(100%);
+
+  /* Set a specific height */
+  min-height: 300px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
   .margin{
@@ -673,11 +694,12 @@ Both the maps can be seen below here.</p>
         </header>
 
         <div class="clients-slider swiper-container">
-		<p>In most of the cases, the metadata standards used to describe the items chosen by their cultural institutions were quite aligned with the typical ones in the LAM domain: ISBD and MARC21 for bibliographic records; ISAD(G), ISAAR(CFP) for archival contents; Dublin Core (DC) for the performance "Imponderabilia" - as described by MIT; MMD for the MusicBrainz record of "Inascoltable".<br/> 
+		<p style="text-align: center;">In most of the cases, the metadata standards used to describe the items chosen by their cultural institutions were quite aligned with the typical ones in the LAM domain: ISBD and MARC21 for bibliographic records; ISAD(G), ISAAR(CFP) for archival contents; Dublin Core (DC) for the performance "Imponderabilia" - as described by MIT; MMD for the MusicBrainz record of "Inascoltable".<br/> 
     Nevertheless, as we mentioned previously, when the standards were not explicitly stated nor self-evident, we decided to pick the most suitable and yet coherent ones according to the items' type. Thus, we decided to use CIDOC-CRM for Pomodoro's "3 Colonne", DC for the digitized version of the book "Piazza Maggiore era troppo piccola" and, finally, Schema.org for the movie "Paz!".<br/>
     As already said, we provided a complete description of Radio Alice's last broadcast recording thorough the use and comparison of MARC21, ISBD and DC standards: the record is accessible here.
 		
-		<table class="table table-condensed">	
+		
+    <table class="table table-condensed">	
 			 
   <tr><th></th>	<th>Item</th>	<th>Type</th>	<th>Source</th>	<th>FRBR level</th>	<th>Metadata declared or applied</th></tr>
 <tr><td>1.</td>	<td>Paz!</td>	<td>movie</td>	<td><a href="http://fondazione.cinetecadibologna.it/archivi/memoriaer/film_767" target="_blank">Fondazione Cineteca di Bologna</a></td>	<td>expression</td>	<td>Schema.org</td></tr>
@@ -716,6 +738,7 @@ Both the maps can be seen below here.</p>
 
 <h1 style="color: black; margin-top: 7%; font-size: 28px"><a name="who">WHO</a></h1>
 <p>
+<div class="scrolltab">
 <table class="table table-condensed" width="50%">
 <tr><th>Element</th>	<th>ISBD</th>	<th>MARC21</th>	<th>DC/DCTerms</th>	<th>CIDOC-CRM</th>	<th>FRBRoo</th>	<th>MMD</th>	<th>ISAD(G)</th>	<th>Schema.org</th></tr>
 <tr><td>individual creator</td>	<td>1.4 Statement of responsibility</td>	<td>100 - Main Entry - Personal Name</td>	<td>dc:creator; dcterms:Agent</td>	<td>crm:E39_Actor</td>	<td>frbroo:F11_Corporate_Body</td>	<td>artist (artist, name)</td>	<td>2.1 Name of creator(s)</td>	<td>schema:director (for movies)</td></tr>
@@ -729,10 +752,12 @@ Both the maps can be seen below here.</p>
 <tr><td>performer/player</td>	<td>NA</td>	<td>NA</td>	<td>dcterms:Agent</td>	<td>crm:E21_Person</td>	<td>frbroo:F10_Person</td>	<td>artist (artist, name)</td>	<td>NA</td>	<td>schema:actor; schema:performer</td></tr>
 <tr><td>founder/director</td>	<td>NA</td>	<td>700-720 - Added Entry</td>	<td>dc:contributor; dcterms:Agent</td>	<td>NA</td>	<td>NA</td>	<td>NA</td>	<td>NA</td>	<td>schema:founder</td></tr>
 </table>
+</div>
 </p>
 
 <h1 style="color: black; margin-top: 10%; font-size: 28px"><a name="where">WHERE</a></h1>
 <p>
+<div class="scrolltab">
 <table class="table table-condensed" width="50%">
 <tr><th>Element</th>	<th>ISBD</th>	<th>MARC21</th>	<th>DC/DCTerms</th>	<th>CIDOC-CRM</th>	<th>FRBRoo</th>	<th>MMD</th>	<th>ISAD(G)</th>	<th>Schema.org</th></tr>
 <tr><td>place of placement</td>	<td>NA</td>	<td>852 - Location</td>	<td>dcterms:LocationPeriodOrJurisdiction; dcterms:Location</td>	<td>crm:E53_Place</td>	<td>frbroo:F9_Place</td>	<td>NA</td>	<td>NA</td>	<td>NA</td></tr>
@@ -744,10 +769,12 @@ Both the maps can be seen below here.</p>
 <tr><td>depicted place</td>	<td>NA</td>	<td>651 $a - Geographic name</td>	<td>NA</td>	<td>NA</td>	<td>NA</td>	<td>NA</td>	<td>NA</td>	<td>schema:
 <br>contentLocation</td></tr>
 </table>
+</div>
 </p>
 
 <h1 style="color: black; margin-top: 10%; font-size: 28px"><a name="when">WHEN</a></h1>
 <p>
+<div class="scrolltab">
 <table class="table table-condensed" width="50%">
 <tr><th>Element</th>	<th>ISBD</th>	<th>MARC21</th>	<th>DC/DCTerms</th>	<th>CIDOC-CRM</th>	<th>FRBRoo</th>	<th>MMD</th>	<th>ISAD(G)</th>	<th>Schema.org</th></tr>
 <tr><td>date of material production/printing</td>	<td>4.6 Date of printing or manufacture</td>	<td>260 $g - Date of manufacture</td>	<td>dcterms:PeriodOfTime; dcterms:created</td>	<td>crm:E52_Time_Span</td>	<td>frbroo: F28_Expression_Creation [F30_Publication_Event]</td>	<td>NA</td>	<td>1.3 Date(s)</td>	<td>schema:dateCreated</td></tr>
@@ -756,10 +783,12 @@ Both the maps can be seen below here.</p>
 <tr><td>date of placement</td>	<td>NA</td>	<td>NA</td>	<td>dcterms:PeriodOfTime</td>	<td>crm:E52_Time_Span</td>	<td>crm:E52_Time_Span</td>	<td>NA</td>	<td>NA</td>	<td>NA</td></tr>
 <tr><td>depicted time</td>	<td></td>	<td>648 $a - Chronological term</td>	<td>dc:coverage.temporal</td>	<td>NA</td>	<td>NA</td>	<td>NA</td>	<td>NA</td>	<td>schema:<br>contentReferenceTime</td></tr>
 </table>
+</div>
 </p>
 
 <h1 style="color: black; margin-top: 10%; font-size: 28px"><a name="what">WHAT</a></h1>
 <p>
+<div class="scrolltab">
 <table class="table table-condensed" width="50%">
 <tr><th>Element</th>	<th>ISBD</th>	<th>MARC21</th>	<th>DC/DCTerms</th>	<th>CIDOC-CRM</th>	<th>FRBRoo</th>	<th>MMD</th>	<th>ISAD(G)</th>	<th>Schema.org</th></tr>
 <tr><td>tile/name</td>	<td>1.1-3 Title (proper, parallael, complement)</td>	<td>20X-24X - Title and Title-Related Fields</td>	<td>NA</td>	<td>crm:E35_Title</td>	<td>crm:E35_Title</td>	<td>title (release-title)</td>	<td>1.2 Title</td>	<td>schema:name</td></tr>
@@ -782,6 +811,7 @@ Both the maps can be seen below here.</p>
 <tr><td>technique</td>	<td>0.1 Content Form; 7.0.1 Note on content form and media type</td>	<td>337 - Media Type; 007/00 (Category of material)</td>	<td>dcterms:<br>MediaType</td>	<td>crm:E55_Type</td>	<td>frbroo: F3_Manifestation_Product_Type</td>	<td>NA</td>	<td>NA</td>	<td>NA</td></tr>
 <tr><td>type</td>	<td>0.1 Content Form; 7.0.1 Note on content form and media type</td>	<td>336 - Content Type; Leader /06 (Type of record)</td>	<td>dcterms:<br>MediaType</td>	<td>crm:E55_Type</td>	<td>frbroo: F3_Manifestation_Product_Type</td>	<td>Type attribute</td>	<td>1.4 Level of description</td>	<td>NA</td></tr>
 </table>
+</div>
 </p>
 
 		 		 
@@ -877,19 +907,7 @@ Both the maps can be seen below here.</p>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <figure>
-              <img src="assets/img/portfolio/CModelClass.jpg" class="img-fluid" alt="">
-              <a href="assets/img/portfolio/CModelClass.jpg" data-lightbox="portfolio" data-title="Conceptual map" class="link-preview"><i class="bi bi-plus"></i></a>
-              </figure>
-
-            <div class="portfolio-info">
-              <h4>Detailed Conceptual models</h4>
-              <p></p>
-            </div>
-          </div>
-        </div>
+       
 		</div>
 
       </div>
@@ -902,7 +920,7 @@ Both the maps can be seen below here.</p>
 <section>
   <div class="margin">
   <header class="section-header">
-          <h3>TITOLO</h3>
+          <h3>DETAILED CONCEPTUAL MODEL</h3>
           <p> due righe due righe due righe </p>
         </header>
 
@@ -928,7 +946,7 @@ Both the maps can be seen below here.</p>
     <button class="nav-link" id="poster-tab" data-bs-toggle="tab" data-bs-target="#poster" type="button" role="tab" aria-controls="poster" aria-selected="false"><b>POSTER</b></button>
   </li>
   <li class="nav-item" role="presentation">
-    <button class="nav-link" id="album-tab" data-bs-toggle="tab" data-bs-target="#album" type="button" role="tab" aria-controls="album" aria-selected="false"><b>MUSICAL ALBUM</b></button>
+    <button class="nav-link" id="album-tab" data-bs-toggle="tab" data-bs-target="#album" type="button" role="tab" aria-controls="album" aria-selected="false"><b> ALBUM</b></button>
   </li>
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="film-tab" data-bs-toggle="tab" data-bs-target="#film" type="button" role="tab" aria-controls="film" aria-selected="false"><b>FILM</b></button>
@@ -936,32 +954,35 @@ Both the maps can be seen below here.</p>
   <li class="nav-item" role="presentation">
     <button class="nav-link" id="magazine-tab" data-bs-toggle="tab" data-bs-target="#magazine" type="button" role="tab" aria-controls="magazine" aria-selected="false"><b>MAGAZINE</b></button>
   </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="radio-tab" data-bs-toggle="tab" data-bs-target="#radio" type="button" role="tab" aria-controls="radio" aria-selected="false"><b>RADIO</b></button>
+  </li>
 </div>
 </ul>
 <div class="tab-content" id="myTabContent">
   <div class="tab-pane fade" id="archive" role="tabpanel" aria-labelledby="archive-tab">
-    <img src="assets/img/archivi.svg" width="95%" style="margin:15px">
+    <img src="assets/img/archivi.svg" width="100%" style="margin-right: 30%; margin-left: 15%">
   </div>
   <div class="tab-pane fade" id="book" role="tabpanel" aria-labelledby="book-tab">
-    <img src="assets/img/book (1).svg" width="95%" style="margin: 15px">
+    <img src="assets/img/book (1).svg" width="100%" style="margin-right: 30%; margin-left: 15%">
   </div>
   <div class="tab-pane fade" id="performance" role="tabpanel" aria-labelledby="performance-tab">
-    <img src="assets/img/performance conceptual.svg" width="900px"  style="margin: 15px">
+    <img src="assets/img/performance conceptual.svg" width="100%" style="margin-right: 30%; margin-left: 15%">
   </div>
   <div class="tab-pane fade" id="colonne" role="tabpanel" aria-labelledby="colonne-tab">
-    <img src="assets/img/colonne.svg" width="95%" style="margin:15px" >
+    <img src="assets/img/colonne.svg" width="100%" style="margin-right: 30%; margin-left: 15%" >
   </div>
   <div class="tab-pane fade" id="poster" role="poster" aria-labelledby="poster-tab">
-    <img src="assets/img/poster.svg" width="95%" style="margin:15px">
+    <img src="assets/img/poster.svg" width="100%" style="margin-right: 30%; margin-left: 15%">
   </div>
   <div class="tab-pane fade" id="album" role="tabpanel" aria-labelledby="album-tab">
-    <img src="assets/img/musicalalbum.svg" width="95%" style="margin:15px">
+    <img src="assets/img/musicalalbum.svg" width="100%" style="margin-right: 30%; margin-left: 15%">
   </div>
   <div class="tab-pane fade" id="colonne" role="tabpanel" aria-labelledby="colonne-tab">
-    <img src="assets/img/colonne.svg"  width="95%"  style="margin:15px auto">
+    <img src="assets/img/colonne.svg"  width="100%" style="margin-right: 30%; margin-left: 15%">
   </div>
   <div class="tab-pane fade show active" id="bolo" role="tabpanel" aria-labelledby="bolo-tab">
-    <img src="assets/img/centro.svg"  width="95%" style="margin:15px auto">
+    <img src="assets/img/centro.svg"  width="100%" style="margin-right: 30%; margin-left: 15%">
   </div>
 </div>
 </nav>
@@ -971,7 +992,7 @@ Both the maps can be seen below here.</p>
 
 <!-- ======= End of detailed section ======= -->
 <!-- ======= Parallax ======= -->
-    <div class="parallax">
+    <div class="parallax3">
     </div>
     <!-- End Parallax Section -->
 
