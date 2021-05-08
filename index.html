@@ -338,7 +338,7 @@
 
     <!-- ======= Services Section ======= -->
     <section id="services">
-      <div class="container" data-aos="fade-up" style="text-align: left;">
+      <div class="container" data-aos="fade-up" style="text-align: center;">
 
         <header class="section-header wow fadeInUp">
           <h3>Idea</h3>
@@ -366,7 +366,7 @@
           <h3>The items</h3>
           <!--<p>Despite the fact that we found a lot of interesting items related each other and illustrating the crucial political and cultural events running in Bologna in 1977, we finally have choosen the 10 ones that could show the wider variety of typology in the LAM domain as well as different kind of metadata standards used for their description.</p>-->
         </header>
-    <p>After a brainstorm activity over our scenario idea, we had to choose the items to work on for our project. A lot of interesting and suitable things came into our minds, both from associative thoughts, prior knowledge and researches: in fact, innumerable items could perfectly express and bear witness to the crucial political and cultural events happened in Bologna during 1977. 
+    <p style="text-align: center">After a brainstorm activity over our scenario idea, we had to choose the items to work on for our project. A lot of interesting and suitable things came into our minds, both from associative thoughts, prior knowledge and researches: in fact, innumerable items could perfectly express and bear witness to the crucial political and cultural events happened in Bologna during 1977. 
     Finally, we opted for the ten ones that could better illustrate the wide range of items within the LAM domain, as well as those that could offer some variety of metadata standards in their web-based description.<br/>
     For each item, we provided a brief contextualization and we highlighted its typology together with the Cultural Institution that holds it and the standard used in its description. Most of the times, the standards were explicitly declared by the institution or self-evident. Nevertheless, in some cases we had to infer the or to apply them on our own.<br/>
     In particular, for the audio recording of the last broadcast from Radio Alice - 12th March 1977 -, we decided to create a formal description from scratch, due to its strong relevance for the facts of Bologna 1977. We used it as a metadata application and alignment example of a possible MARC21, ISBD and DC record.<br/>
@@ -711,10 +711,10 @@ Both the maps can be seen below here.</p>
         <div class="clients-slider swiper-container">
 
 
- <p>We then proceeded with the alignment of those classes and predicates, coming from different metadata standards, that we found most suitable for our purposes. We decided to display the result of our alignment by means of four tables, each focusing on a precise aspect of the information related to our items: people (who), places (where), dates and events (when), other information, concepts and subjects (what).</p>
+ <p style="text-align: center;">We then proceeded with the alignment of those classes and predicates, coming from different metadata standards, that we found most suitable for our purposes. We decided to display the result of our alignment by means of four tables, each focusing on a precise aspect of the information related to our items: people (who), places (where), dates and events (when), other information, concepts and subjects (what).</p>
 
 
-<h1 style="color: black; margin-top: 5%; font-size: 28px"><a name="who">WHO</a></h1>
+<h1 style="color: black; margin-top: 7%; font-size: 28px"><a name="who">WHO</a></h1>
 <p>
 <table class="table table-condensed" width="50%">
 <tr><th>Element</th>	<th>ISBD</th>	<th>MARC21</th>	<th>DC/DCTerms</th>	<th>CIDOC-CRM</th>	<th>FRBRoo</th>	<th>MMD</th>	<th>ISAD(G)</th>	<th>Schema.org</th></tr>
@@ -797,11 +797,11 @@ Both the maps can be seen below here.</p>
       <div class="container" data-aos="zoom-in">
 
         <header class="section-header">
-          <h3 style="margin-top: 6%">Theoretical model</h3>
+          <h3 style="margin-top: 7%">Theoretical model</h3>
         </header>
 
         <div class="clients-slider swiper-container">
-		<p>We started analysing the metadata related to every item, and we construct a representation of the interconnection between items and entities that enriched the ER model.
+		<p style="text-align: center;">We started analysing the metadata related to every item, and we construct a representation of the interconnection between items and entities that enriched the ER model.
 		<br>[We then go further to abstract every possible relation to people, places, time and concent by simplifying the nodes and enriching the edges towards them.]</p>
         <p>
 					
@@ -843,11 +843,11 @@ Both the maps can be seen below here.</p>
       <div class="container" data-aos="zoom-in">
 
         <header class="section-header">
-          <h3>Conceptual model</h3>
+          <h3 style="margin-top: 10%">Conceptual model</h3>
         </header>
 
    
-		<p>The Conceptual model we draw is a formalization of the previously made Theoretical model. We typed the edges that constitute our graph i.e. we substituted them with predicates from existing ontologies to express the relationships among our items, places, events and people. We started from our metadata alignement and, when the items were described with standards that are immediately transable in an ontology (e.g. "Imponderabilia" through DC) or that have a strong connection with an existing ontology, we thought it was the most natural choice to adopt these.<br/>
+		<p style="text-align: center;">The Conceptual model we draw is a formalization of the previously made Theoretical model. We typed the edges that constitute our graph i.e. we substituted them with predicates from existing ontologies to express the relationships among our items, places, events and people. We started from our metadata alignement and, when the items were described with standards that are immediately transable in an ontology (e.g. "Imponderabilia" through DC) or that have a strong connection with an existing ontology, we thought it was the most natural choice to adopt these.<br/>
 
     We chose <a href="http://culturalis.org/oad" target="_blank">OAD - Ontology for Archival Description</a> and <a href="http://culturalis.org/eac-cpf/" target="_blank">EAC-CPF</a> for archival items; BibFrame and DC were used for our bibliographical items. We also found out that a more precise description of Comic related properties was possible by means of the predicates from a specific ontology i.e. the <a href="https://comicmeta.org/cbo/Comic.html" target="_blank">Comic Book Ontology</a>. <br/>
 
