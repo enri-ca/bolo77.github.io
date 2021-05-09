@@ -1139,6 +1139,7 @@ section {
 }
 
 .portfolio-item figure .link-preview {
+	left: calc(50%);
 	right: calc(50%);
     top: calc(50%);
 }
