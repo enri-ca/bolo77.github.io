@@ -1040,7 +1040,7 @@ section {
 
 
 
-/* TM Section
+/* Box_grafici Section
 --------------------------------*/
 #TM {
   padding: 60px 0;
@@ -1139,8 +1139,9 @@ section {
 }
 
 .portfolio-item figure .link-preview {
-	right: calc(50% - 108px);
-    top: calc(50% - 18px);
+	left: calc(50%);
+	right: calc(50%);
+    top: calc(50%);
 }
 
  .portfolio-item figure .link-details {
@@ -1150,7 +1151,7 @@ section {
   
  .portfolio-item figure:hover .link-preview {
   opacity: 1;
-  left: calc(50% - 44px);
+  left: calc(50%);
 }
 
  .portfolio-item figure:hover .link-details {
