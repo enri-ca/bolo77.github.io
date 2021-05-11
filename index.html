@@ -4,16 +4,6 @@
 <head>
   <style type="text/css">
   
-  div.scrolltab {
-  overflow: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-  display: block;
-  margin: 0 auto;
-  overflow-x: scroll;
-  white-space: nowrap;
-}
-  
 
  /*PARALLAXES*/
   .parallax {
@@ -28,6 +18,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+
 }
  .parallax1{
    /* The image used */
@@ -42,6 +34,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  margin-right: 0%;
+  margin-left: 0%;
 }
 
 .parallax2{
@@ -364,7 +359,7 @@
 
     <!-- ======= Services Section ======= -->
     <section id="services">
-      <div class="container" data-aos="fade-up" style="text-align: center;">
+      <div class="container" data-aos="fade-up">
 
         <header class="section-header wow fadeInUp">
           <h3>Idea</h3>
@@ -398,7 +393,7 @@
           <h3>The Items</h3>
           <!--<p>Despite the fact that we found a lot of interesting items related each other and illustrating the crucial political and cultural events running in Bologna in 1977, we finally have choosen the 10 ones that could show the wider variety of typology in the LAM domain as well as different kind of metadata standards used for their description.</p>-->
         </header>
-    <p style="text-align: center">After a brainstorm activity over our scenario idea, we had to choose <strong>the items</strong> to work on for our project. A lot of interesting and suitable things came into our minds, both from associative thoughts, prior knowledge and researches: in fact, innumerable items could perfectly express and bear witness to the <strong>crucial political and cultural events</strong> happened in Bologna during 1977. 
+    <p>After a brainstorm activity over our scenario idea, we had to choose <strong>the items</strong> to work on for our project. A lot of interesting and suitable things came into our minds, both from associative thoughts, prior knowledge and researches: in fact, innumerable items could perfectly express and bear witness to the <strong>crucial political and cultural events</strong> happened in Bologna during 1977. 
     Finally, we opted for the ten ones that could better illustrate the wide range of items <strong>within the LAM domain</strong>, as well as those that could offer some variety of <strong>metadata standards</strong> in their web-based description.<br/>
 	    <strong>For each item</strong>, we provided a brief contextualization and we highlighted its typology together with <strong>the cultural institution</strong> that holds it and the standard used in its description. Most of the times, <strong>the standards</strong> were explicitly declared by the institution or self-evident. Nevertheless, in some cases we had to infer the or to apply them on our own.<br/>
 	    In particular, for the audio recording of the <strong>last broadcast from Radio Alice</strong> - 12th March 1977 -, we decided to create a <a href="https://enri-ca.github.io/bolo77.github.io/radio_alice.html" target="_blank">formal description from scratch</a>, due to its strong relevance for the facts of Bologna 1977. We used it as a metadata application and alignment example of a possible <strong>MARC21</strong>, <strong>ISBD</strong> and <strong>Dublin Core</strong> record.<br/>
@@ -643,7 +638,7 @@ https://archive.org/details/piazza-maggiore-era-troppo-piccola" class="img-fluid
         </header>
 
 <div>
-	<p style="text-align: center;">So to start with our <strong>Knowledge Organization</strong> process, we represented our domain scenario and the ten selected items through a <strong>Conceptual Map</strong>. Some crucial <strong>people, places and events</strong> that make our entities <strong>highly interconnected</strong> with each other were necessarily pointed out already at this stage.<br/>
+	<p style="text-align:  left;">So to start with our <strong>Knowledge Organization</strong> process, we represented our domain scenario and the ten selected items through a <strong>Conceptual Map</strong>. Some crucial <strong>people, places and events</strong> that make our entities <strong>highly interconnected</strong> with each other were necessarily pointed out already at this stage.<br/>
 		A second step was <strong>the abstraction</strong> of the model through a formalization i.e. an <strong>Entity-Relationships Model</strong> (E/R Model).
 		Both the maps can be seen <strong>below</strong> here.</p>
 </div>
@@ -700,7 +695,7 @@ https://archive.org/details/piazza-maggiore-era-troppo-piccola" class="img-fluid
         </header>
 
         <div class="clients-slider swiper-container">
-		<p style="text-align: center;">In most of the cases, the <strong>metadata standards used</strong> to describe the items chosen by their cultural institutions were quite aligned with the typical ones in the <strong>LAM domain</strong>: <strong>ISBD</strong> and <strong>MARC21</strong> for bibliographic records; <strong>ISAD(G)</strong>, <strong>ISAAR(CFP)</strong> for archival contents; <strong>Dublin Core</strong> (<strong>DC</strong>) for the performance <cite>"Imponderabilia"</cite> - as described by MIT; <strong>MMD</strong> for the MusicBrainz record of <cite>"Inascoltable"</cite>.<br/> 
+		<p style="text-align:  left;">In most of the cases, the <strong>metadata standards used</strong> to describe the items chosen by their cultural institutions were quite aligned with the typical ones in the <strong>LAM domain</strong>: <strong>ISBD</strong> and <strong>MARC21</strong> for bibliographic records; <strong>ISAD(G)</strong>, <strong>ISAAR(CFP)</strong> for archival contents; <strong>Dublin Core</strong> (<strong>DC</strong>) for the performance <cite>"Imponderabilia"</cite> - as described by MIT; <strong>MMD</strong> for the MusicBrainz record of <cite>"Inascoltable"</cite>.<br/> 
     Nevertheless, as we mentioned previously, when the <strong>standards were not explicitly stated</strong> nor self-evident, we decided to pick the most suitable and yet coherent ones according to the items' type. Thus, we decided to use <strong>CIDOC-CRM</strong> for Pomodoro's <cite>"3 Colonne"</cite>, <strong>DC</strong> for the digitized version of the book <cite>"Piazza Maggiore era troppo piccola"</cite> and, finally, <strong>Schema.org</strong> for the movie <cite>"Paz!"</cite>.<br/>
     As already said, we provided a <strong>complete description</strong> of Radio Alice's last broadcast recording thorough the use and comparison of <strong>MARC21</strong>, <strong>ISBD</strong> and <strong>DC</strong> standards: the record is accessible <a href="https://enri-ca.github.io/bolo77.github.io/radio_alice.html" target="_blank">here</a>.
 		
@@ -751,7 +746,7 @@ https://archive.org/details/piazza-maggiore-era-troppo-piccola" class="img-fluid
         <div class="clients-slider swiper-container">
 
 
-		<p style="text-align: center;">We then proceeded with <strong>the alignment</strong> of those classes and predicates, coming from different metadata standards, that we found most suitable for our purposes. We decided to display the result of our alignment by means of <strong>four tables</strong>, each focusing on a precise aspect of the information related to our items: <strong>people</strong> (who), <strong>places</strong> (where), <strong>dates</strong> and <strong>events</strong> (when), other <strong>information</strong>, <strong>concepts</strong> and <strong>subjects</strong> (what).</p>
+		<p style="text-align: left;">We then proceeded with <strong>the alignment</strong> of those classes and predicates, coming from different metadata standards, that we found most suitable for our purposes. We decided to display the result of our alignment by means of <strong>four tables</strong>, each focusing on a precise aspect of the information related to our items: <strong>people</strong> (who), <strong>places</strong> (where), <strong>dates</strong> and <strong>events</strong> (when), other <strong>information</strong>, <strong>concepts</strong> and <strong>subjects</strong> (what).</p>
 
 
 <h1 style="color: black; margin-top: 7%; font-size: 28px"><a name="who">WHO</a></h1>
@@ -850,7 +845,7 @@ https://archive.org/details/piazza-maggiore-era-troppo-piccola" class="img-fluid
         </header>
 
         <div class="clients-slider swiper-container">
-		<p style="text-align: center;">After having produced our metadata alignment, we developed a <strong>Theoretical Model</strong> to express in natural language and through a graphical visualization <strong>all the information we had</strong> regarding our items - i.e. their metadata - and to point out <strong>additional related entities</strong> and links. We focused mainly on integrating information about <strong>people</strong>, <strong>events</strong> or <strong>additional items</strong> that we did not cover in previous steps: so to say, some of the many possible entities related to <strong>BoLo(D) '77 core</strong>.<br/>
+		<p style="text-align: left;">After having produced our metadata alignment, we developed a <strong>Theoretical Model</strong> to express in natural language and through a graphical visualization <strong>all the information we had</strong> regarding our items - i.e. their metadata - and to point out <strong>additional related entities</strong> and links. We focused mainly on integrating information about <strong>people</strong>, <strong>events</strong> or <strong>additional items</strong> that we did not cover in previous steps: so to say, some of the many possible entities related to <strong>BoLo(D) '77 core</strong>.<br/>
 
 	      We also drew an <strong>enhanced version</strong> of our E/R Model as for adding the new crucial interconnecting nodes and relationships among our entities.<br/>
       
@@ -899,7 +894,7 @@ https://archive.org/details/piazza-maggiore-era-troppo-piccola" class="img-fluid
         </header>
 
    
-	      <p style="text-align: center;">The <strong>Conceptual Model</strong> we drew is a formalization of the previously made Theoretical Model. We typed the edges that constitute our graph i.e. we substituted them with <strong>predicates from existing ontologies</strong> to express the relationships among our items, places, events and people. We started from our zstrong>metadata alignement</strong> and, when the items were described with standards that are immediately transable in an ontology or that have a strong connection with an existing ontology, we thought it was the most natural choice to adopt these: e.g. <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" target="_blank">Dublin Core</a> for <cite>"Imponderabilia"</cite>.<br/>
+	      <p style="text-align: left;">The <strong>Conceptual Model</strong> we drew is a formalization of the previously made Theoretical Model. We typed the edges that constitute our graph i.e. we substituted them with <strong>predicates from existing ontologies</strong> to express the relationships among our items, places, events and people. We started from our <strong>metadata alignement</strong> and, when the items were described with standards that are immediately transable in an ontology or that have a strong connection with an existing ontology, we thought it was the most natural choice to adopt these: e.g. <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" target="_blank">Dublin Core</a> for <cite>"Imponderabilia"</cite>.<br/>
 
     We chose <a href="http://culturalis.org/oad" target="_blank">OAD - Ontology for Archival Description</a> and <a href="http://culturalis.org/eac-cpf/" target="_blank">EAC-CPF</a> for archival items; <a href="http://id.loc.gov/ontologies/bibframe/" target="_blank">BibFrame</a> and DC were used for our bibliographical items. We also found out that a more precise description of <strong>Comic related properties</strong> was possible by means of the predicates from a specific ontology i.e. the <a href="https://comicmeta.org/cbo/Comic.html" target="_blank">Comic Book Ontology</a>. <br/>
 
@@ -1115,24 +1110,27 @@ https://archive.org/details/piazza-maggiore-era-troppo-piccola" class="img-fluid
 </section>
 
 <!-- ======= End of detailed section ======= -->
-<!-- ======= Parallax ======= -->
+<!-- <======= Parallax ======= -->
+    <section>
     <div class="parallax3">
     </div>
+    </section>
     <!-- End Parallax Section -->
 
 <!-- ======= Data representation section ======= -->
     <section id="datarepr">
-      <div class="container" data-aos="zoom-in">
+     <div class="container" data-aos="zoom-in">
 
-        <header class="section-header">
-          <h3 style="margin-top: 7%">Data Representation and RDF Production</h3>
+        <header class="section-header" style="margin-top: 7%">
+          <h3 >Data Representation and RDF Production</h3>
+        </header>
 		<p>As final part of our workflow, we went <strong>back to our data</strong>. A <strong>table with formalized predicates</strong> was produced for each item and, for better usability and practicity, we diplayed these on a <a href="table_conceptual.html" target="_blank">specific separate page</a>.<br/><br/>
 			This preliminary step allowed the proper <strong>Knowledge Representation</strong> of BoLo(D) '77 through RDF production. To serialize our <strong>RDF triples</strong> we chose <a href="https://www.w3.org/TR/turtle/" target="_blank">Turtle</a>, due to its readability and widespread use in the LOD world.<br/> 
 			We <strong>minted URIs</strong> for our entities by dividing these into <strong>items</strong>, <strong>places</strong>, <strong>events</strong> and <strong>agents</strong>. For each main group, further categorization was applied in order to name the entities. We followed common approaches in Knowledge Representation and Ontology Creation, trying always to be <strong>coherent</strong>, <strong>consistent</strong> and <strong>unambiguous</strong>.<br/>For practicity, we wrote triples about a sample of our items. We chose, nevertheless, those items that are <strong>more transversally interconnected</strong> with each other, for some direct or indirect reasons, through places, events or people: i.e. <cite>"3 Colonne"</cite>, <cite>"Inascoltable"</cite>, <cite>"Piazza Maggiore era troppo piccola"</cite> and the poster <cite>"Incontro Internazionale Contro la Repressione"</cite>.<br/>
 			For referencing, we used the <strong>owl:sameAs</strong> property with <a href="https://viaf.org/" target="_blank">VIAF</a>, <a href="https://www.wikidata.org/" target="_blank">WIKIDATA</a> and <a href="https://id.loc.gov/" target="_blank">LCCN - Library of Congress Linked Data Service</a> Authorities for people and items. For <strong>places</strong>, we linked our entities to <a href="https://www.geonames.org/" target="_blank">GeoNames</a>. For controlled forms of genres, artistic techniques and materials we referred mainly to <strong>LCCN controlled forms</strong> of names, with some precious integrations offered by <strong>WIKIDATA</strong>.<br/>
 			In order to create additional <strong>semantic relations</strong>, we linked items and agents - both people or institutions - to their related Webpages or Wikipedia voices through the predicate <strong>foaf:isPrimaryTopicOf</strong>, as for making it possible to deepen one's knowledge about a topic or entity. We also deepened into some partitive interconnections when describing <strong>Pomodoro's <cite>"3 Colonne"</cite></strong>: we linked Bologna's triad to its twin exemplar in Honolulu (<strong>dcterms:relation</strong>) and we additionally distinguished, within the landmark, the <strong>three single sculptures</strong> that constitute it (<strong>crm:P46_is_composed_of</strong>), each with its specific extent, material and technique.
     </p>  
-    </header>
+    
 
     <div class="clients-slider swiper-container">
     <div>
@@ -1171,11 +1169,11 @@ https://archive.org/details/piazza-maggiore-era-troppo-piccola" class="img-fluid
 
 
 <!-- ======= RDF representation Section ======= -->
-    <section id="RDFrepr">
+    <section id="RDFrepr" >
       <div class="container" data-aos="zoom-in">
 
         <header class="section-header">
-          <h3 style="color: black" style="margin-top: 10%">RDF Visualization</h3>
+          <h3 style="color: black; margin-top: 10%">RDF Visualization</h3>
         </header>
 
         <div class="clients-slider swiper-container"></div>
@@ -1190,7 +1188,7 @@ https://archive.org/details/piazza-maggiore-era-troppo-piccola" class="img-fluid
               <a href="assets/img/portfolio/RDFgraph.svg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Full RDF visualization"><i class="bi bi-plus"></i></a>
             </figure>
             <div class="portfolio-info">
-              <h4>RDF visualization</h4>
+              <h4 style="color: black">RDF visualization</h4>
             </div>
 			</div>
         </div>
